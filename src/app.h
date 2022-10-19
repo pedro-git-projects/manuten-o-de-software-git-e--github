@@ -3,18 +3,28 @@
 
 #include <iostream>
 #include <stdlib.h>
+#include <string>
 #include <vector>
 
 struct App {
 	App();
 	void loop();
 	void boasVindas();
-	void executarScript();
-	void cirarCommit(std::string mensagem);
+	void crirarCommit();
+	void inicializar();
+	void criarBranch();
+	void lerVersao();
+	void status();
+	void log();
+	void add();
+	void imprimirOpcoes(); 
+	void escolheOpcao();
 
 	private:
 		bool m_flag;
-		std::vector<const char*> m_scripts;
+		std::string m_bnome;
+		std::string m_mensagem;
+		int m_opcao;
 };
 
 #endif

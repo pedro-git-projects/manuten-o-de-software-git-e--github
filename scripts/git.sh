@@ -2,6 +2,8 @@
 
 GIT='git --git-dir='$PWD'/.git'
 
+BNAME=${bname}
+
 # List a versão do git 
 $GIT --version
 
