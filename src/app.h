@@ -10,6 +10,7 @@ struct App {
 	void loop();
 	void boasVindas();
 	void executarScript();
+	void cirarCommit(std::string mensagem);
 
 	private:
 		bool m_flag;
