@@ -11,8 +11,12 @@ App::App() : m_flag(true)  { }
 void App::loop() {
 	boasVindas();
 	while (m_flag) {
-		imprimirOpcoes();
-		escolheOpcao();
+		try {
+			imprimirOpcoes();
+			escolheOpcao();
+		} catch(std::runtime_error& err) {
+			std::cout << err.what() << std::endl;
+		}
 	}
 }
 
